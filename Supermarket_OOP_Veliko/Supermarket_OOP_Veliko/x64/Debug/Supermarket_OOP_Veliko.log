@@ -1,0 +1,16 @@
+﻿  Manager.cpp
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(15,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(19,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(12,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(14,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(5,31): warning C4227: anachronism used: qualifiers on reference are ignored
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(255,15): warning C4552: '/': result of expression not used
+  Supermarket_OOP_Veliko.vcxproj -> C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\x64\Debug\Supermarket_OOP_Veliko.exe
