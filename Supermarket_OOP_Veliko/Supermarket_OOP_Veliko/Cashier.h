@@ -1,10 +1,10 @@
 #pragma once
 #include "Employee.h"
+#include "Constants.h"
 class Cashier :
     protected Employee
 {
 private:
-    int const DEFAULT_STRING_LENGTH = 10;
     int transactions;
     int warningPoints;
     bool approved;

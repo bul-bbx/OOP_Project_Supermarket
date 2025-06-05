@@ -1,10 +1,10 @@
 #pragma once
+#include "Constants.h"
 #include <fstream>
 #include <iostream>
 class Employee
 {
 protected:
-	int const DEFAULT_STRING_LENGTH = 10;
 	int id;
 	char* firstName;
 	char* familyName;
@@ -19,6 +19,5 @@ public:
 	Employee(Employee& const emp);
 	Employee(int id, char* firstName, char* familyName, char* telephoneNumber, short age, char* password);
 	~Employee();
-	int getLatestId();
 };
-
+int getLatestWorkerId();

@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Constants.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Product.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Cashier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Product.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -39,20 +59,32 @@
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Category.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Voucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\ProductByWeight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\ProductByWeight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\ProductByUnit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\ProductByUnit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Product.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Voucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|solutionrelative:Supermarket_OOP_Veliko\\Voucher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0513FC06-94EE-4FAF-BBA7-1A42E8DC60F5}|Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.vcxproj|C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -70,30 +102,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Config.cpp",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Config.cpp",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Config.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "DocumentIndex": 3,
+              "Title": "Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Manager.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Manager.cpp",
+              "ViewState": "AQIAALcAAAAAAAAAAAAAABYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-03T16:49:41.096Z",
+              "WhenOpened": "2025-06-01T19:02:16.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Product.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Product.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAlwA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-04T14:01:17.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Product.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Product.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:02:16.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Category.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Category.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Category.cpp",
+              "ViewState": "AQIAADkAAAAAAAAAAAAQwE8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T19:02:16.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Constants.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Constants.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Constants.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-05T00:39:05.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyString.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\MyString.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\MyString.cpp",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAQwK8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-04T14:26:04.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyString.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\MyString.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\MyString.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\MyString.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAlwBoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-04T14:25:49.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Constants.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Constants.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Constants.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Constants.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-05T00:15:56.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Employee.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Employee.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Employee.cpp",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwEIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T19:02:16.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Employee.h",
               "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.h",
               "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Employee.h",
               "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.h",
               "RelativeToolTip": "Supermarket_OOP_Veliko\\Employee.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-03T13:26:37.518Z",
               "EditorCaption": ""
@@ -101,149 +237,149 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Category.h",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.h",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Category.h",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.h",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Category.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:02:16.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Manager.cpp",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.cpp",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Manager.cpp",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.cpp",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Manager.cpp",
-              "ViewState": "AQIAAIgBAAAAAAAAAAAqwKUBAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:02:16.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Manager.h",
               "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.h",
               "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Manager.h",
               "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Manager.h",
               "RelativeToolTip": "Supermarket_OOP_Veliko\\Manager.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAmAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-01T19:02:16.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cashier.cpp",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.cpp",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Cashier.cpp",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.cpp",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Cashier.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:02:15.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductByUnit.h",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.h",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByUnit.h",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.h",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByUnit.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:02:16.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Product.h",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Product.h",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Product.h",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Product.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:02:16.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductByWeight.h",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.h",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByWeight.h",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.h",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByWeight.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:02:16.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Voucher.h",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Voucher.h",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Voucher.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:02:16.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Category.cpp",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.cpp",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Category.cpp",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.cpp",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Category.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:02:16.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Employee.cpp",
-              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.cpp",
-              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Employee.cpp",
-              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Employee.cpp",
-              "RelativeToolTip": "Supermarket_OOP_Veliko\\Employee.cpp",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAAABIAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:02:16.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Supermarket_OOP_Veliko.cpp",
               "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp",
               "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp",
               "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp",
               "RelativeToolTip": "Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko.cpp",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAawB4AAAAAAAAA",
+              "ViewState": "AQIAAFMBAAAAAAAAAAAAAGcBAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-01T19:02:16.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cashier.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Cashier.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Cashier.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T19:02:15.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Category.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Category.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Category.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Category.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:02:16.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Config.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Config.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Config.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-03T16:49:41.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductByWeight.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByWeight.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByWeight.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-05T00:24:11.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductByWeight.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByWeight.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByWeight.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByWeight.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:02:16.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductByUnit.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByUnit.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByUnit.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-05T00:24:07.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductByUnit.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\ProductByUnit.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\ProductByUnit.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\ProductByUnit.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:02:16.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Voucher.cpp",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.cpp",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Voucher.cpp",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.cpp",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Voucher.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-05T00:24:26.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Voucher.h",
+              "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h",
+              "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Voucher.h",
+              "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Voucher.h",
+              "RelativeToolTip": "Supermarket_OOP_Veliko\\Voucher.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:02:16.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Config.h",
               "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Config.h",
               "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Config.h",
@@ -256,13 +392,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Cashier.h",
               "DocumentMoniker": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.h",
               "RelativeDocumentMoniker": "Supermarket_OOP_Veliko\\Cashier.h",
               "ToolTip": "C:\\Users\\44740\\Desktop\\supermarket\\Supermarket_OOP_Veliko\\Supermarket_OOP_Veliko\\Cashier.h",
               "RelativeToolTip": "Supermarket_OOP_Veliko\\Cashier.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-01T19:02:16.043Z",
               "EditorCaption": ""

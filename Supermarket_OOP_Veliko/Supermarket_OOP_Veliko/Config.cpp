@@ -1,55 +1,69 @@
+#pragma once
 #include "Config.h"
-void replaceLineInFile(const string& filename, int lineNumber, string& newLine) {
-    ifstream inFile(filename);
-    vector<std::string> lines;
-    string line;
+void replaceLineInFile(const char* filename, int targetLine, const char* newLine) {
+    ifstream inputFile(filename);
+    ofstream tempFile("temp.txt");
 
-    // Step 1: Read all lines into memory
-    while (std::getline(inFile, line)) {
-        lines.push_back(line);
-    }
-    inFile.close();
-
-    // Step 2: Modify the desired line (check bounds)
-    if (lineNumber >= 0 && lineNumber < lines.size()) {
-        lines[lineNumber] = newLine;
-    }
-    else {
-        std::cerr << "Line number out of range!" << std::endl;
+    if (!inputFile || !tempFile) {
+        cout << "Error opening file.\n";
         return;
     }
 
-    // Step 3: Write everything back to the file
-    ofstream outFile(filename);
-    for (const auto& l : lines) {
-        outFile << l << "\n";
+    char buffer[1024];
+    int currentLine = 1;
+
+    while (inputFile.getline(buffer, sizeof(buffer))) {
+        if (currentLine == targetLine) {
+            tempFile.write(newLine, strlen(newLine));
+            tempFile.put('\n');
+        }
+        else {
+            tempFile.write(buffer, strlen(buffer));
+            tempFile.put('\n');
+        }
+        currentLine++;
     }
+
+    // If the target line was beyond EOF, pad with empty lines
+    while (currentLine <= targetLine) {
+        if (currentLine == targetLine) {
+            tempFile.write(newLine, strlen(newLine));
+        }
+        tempFile.put('\n');
+        currentLine++;
+    }
+
+    inputFile.close();
+    tempFile.close();
+
+    remove(filename);
+    rename("temp.txt", filename);
 }
 
-void deleteLineFromFile(const string& filename, int lineToDelete) {
-    ifstream inFile(filename);
-    vector<string> lines;
-    string line;
+void deleteLineFromFile(const char* filename, int targetLine) {
+    ifstream inputFile(filename);
+    ofstream tempFile("temp.txt");
 
-    // Step 1: Read all lines
-    while (getline(inFile, line)) {
-        lines.push_back(line);
-    }
-    inFile.close();
-
-    // Step 2: Check bounds and remove line
-    if (lineToDelete >= 0 && lineToDelete < lines.size()) {
-        lines.erase(lines.begin() + lineToDelete);
-    }
-    else {
-        cerr << "Error: line number out of range.\n";
+    if (!inputFile || !tempFile) {
+        cout << "Error opening file.\n";
         return;
     }
 
-    // Step 3: Write all remaining lines back to the file
-    ofstream outFile(filename);
-    for (const auto& l : lines) {
-        outFile << l << "\n";
+    char buffer[1024];
+    int currentLine = 1;
+
+    while (inputFile.getline(buffer, sizeof(buffer))) {
+        if (currentLine != targetLine) {
+            tempFile.write(buffer, strlen(buffer));
+            tempFile.put('\n');
+        }
+        currentLine++;
     }
-    outFile.close();
+
+    inputFile.close();
+    tempFile.close();
+
+    // Replace the original file
+    remove(filename);
+    rename("temp.txt", filename);
 }

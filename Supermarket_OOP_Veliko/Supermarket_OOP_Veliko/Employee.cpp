@@ -1,5 +1,5 @@
+#pragma once
 #include "Employee.h"
-
 
 using namespace std;
 
@@ -64,7 +64,7 @@ void Employee::free()
 
 Employee::Employee()
 {
-	int latestId = getLatestId();
+	int latestId = getLatestWorkerId();
 	if (latestId == -1) {
 		return;
 	}
@@ -140,7 +140,7 @@ Employee::~Employee()
 
 
 //Returns -1 if the file did not open
-int Employee::getLatestId() {
+int getLatestWorkerId() {
 	ifstream workers("EmployeeLatestId.txt");
 	if (!workers)
 	{

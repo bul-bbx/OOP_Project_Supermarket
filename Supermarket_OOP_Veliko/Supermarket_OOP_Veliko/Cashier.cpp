@@ -1,4 +1,6 @@
+#pragma once
 #include "Cashier.h"
+
 using namespace std;
 
 void Cashier::copyFrom(Cashier& const cash)

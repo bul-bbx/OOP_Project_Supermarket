@@ -1,16 +1,17 @@
 #pragma once
 #include "Employee.h"
-#include "Cashier.h"
 #include "Config.h"
+#include "MyString.h"
+#include "Constants.h"
+#include "Category.h"
 #include <fstream>
 #include <iostream>
-#include <string>
+#include <cstdlib>
+#include <ctime> 
 class Manager :
     protected Employee
 {
 protected:
-    const string& CASHIERS_FILE_NAME = "Cashiers.txt";
-    const string CATEGORIES_FILE_NAME = "Categories.txt";
     void copyFrom(Manager& const man);
     void free();
 public:
@@ -33,4 +34,9 @@ public:
     void loadProducts(char* fileName);
     void loadGiftCards(char* fileName);
 };
+
+char getRandomNumAsChar();
+char getRandomLetterUpper();
+char getRandomLetterLower();
+char* createSpecialKey();
 

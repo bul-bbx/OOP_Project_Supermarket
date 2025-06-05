@@ -1,15 +1,22 @@
 #pragma once
+#include "MyString.h"
+#include "Constants.h"
+#include <fstream>
+#include <iostream>
+
 class Category
 {
 	int id;
 	char* name;
 	char* description;
-private:
-	void CopyFrom(Category* const category);
+	void copyFrom(Category& const category);
 	void free();
 public:
 	Category();
-	Category(int id, char* name, char* description);
+	Category(Category& const cat);
+	Category(int _id, char* _name, char* _description);
 	~Category();
 };
+
+int categoryExists(char* name);
 

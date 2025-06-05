@@ -130,8 +130,11 @@
     <ClCompile Include="Cashier.cpp" />
     <ClCompile Include="Category.cpp" />
     <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Constants.cpp" />
+    <ClCompile Include="Constants.h" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="MyString.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductByUnit.cpp" />
     <ClCompile Include="ProductByWeight.cpp" />
@@ -144,6 +147,7 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="MyString.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductByUnit.h" />
     <ClInclude Include="ProductByWeight.h" />
