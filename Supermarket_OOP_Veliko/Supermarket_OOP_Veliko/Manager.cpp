@@ -627,3 +627,25 @@ void Manager::loadProducts(char* fileName)
 void Manager::loadGiftCards(char* fileName)
 {
 }
+
+Manager& Manager::operator=(Manager& other)
+{
+	if (this != &other) {
+		free();
+		copyFrom(other);
+	}
+	return *this;
+}
+Manager& Manager::operator=(MyString* other)
+{
+	int UId = 0;
+	tryConvertToInt(other[0].data, UId);
+	int age = 0;
+	tryConvertToInt(other[4].data, age);
+	Manager otherM(UId, other[1].data, other[2].data, other[3].data, age, other[5].data);
+	if (this != &otherM) {
+		free();
+		copyFrom(otherM);
+	}
+	return *this;
+}

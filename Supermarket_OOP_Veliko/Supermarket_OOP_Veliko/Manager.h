@@ -33,6 +33,8 @@ public:
     void deleteProduct(int const productId);
     void loadProducts(char* fileName);
     void loadGiftCards(char* fileName);
+    Manager& operator=(Manager& other);
+    Manager& operator=(MyString* other);
 };
 
 char getRandomNumAsChar();

@@ -15,6 +15,7 @@ public:
     ~MyString();
     MyString& operator=(const MyString& other);
     MyString& operator=(char* other);
+    bool operator==(const MyString& other) const;
     MyString& append(const char* other);
     MyString& append(char* other, int length);
     MyString& append(const MyString& other);

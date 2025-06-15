@@ -84,6 +84,16 @@ MyString& MyString::operator=(char* other)
     return *this;
 }
 
+bool MyString::operator==(const MyString& other) const
+{
+    if (length != other.length) return false;
+    for (int i = 0; i < length; i++)
+        if (data[i] != other.data[i])
+            return false;
+
+    return true;
+}
+
 MyString& MyString::append(char* other, int length)
 {
     char* temp = new char[length + this->length - 1];

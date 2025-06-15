@@ -1,4 +1,30 @@
-﻿  Supermarket_OOP_Veliko.cpp
+﻿  Manager.cpp
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Constants.h(12,23): warning C4114: same type qualifier used more than once
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(15,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(19,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(12,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(16,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(15,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(36,31): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Manager.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(41,31): warning C4227: anachronism used: qualifiers on reference are ignored
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(466,11): warning C4552: '/': result of expression not used
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(543,11): warning C4552: '/': result of expression not used
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.cpp(616,11): warning C4552: '/': result of expression not used
+  Supermarket_OOP_Veliko.cpp
 C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Constants.h(12,23): warning C4114: same type qualifier used more than once
   (compiling source file 'Supermarket_OOP_Veliko.cpp')
   
@@ -17,31 +43,27 @@ C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko
 C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(15,26): warning C4227: anachronism used: qualifiers on reference are ignored
   (compiling source file 'Supermarket_OOP_Veliko.cpp')
   
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(36,31): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
 C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(12,26): warning C4227: anachronism used: qualifiers on reference are ignored
   (compiling source file 'Supermarket_OOP_Veliko.cpp')
   
-C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(187,6): warning C4551: function call missing argument list
-C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(129,1): warning C4715: 'registerCashier': not all control paths return a value
-x64\Debug\Constants.obj : warning LNK4042: object specified more than once; extras ignored
-Category.obj : error LNK2001: unresolved external symbol "int const DEFAULT_STRING_LENGTH" (?DEFAULT_STRING_LENGTH@@3HB)
-Employee.obj : error LNK2001: unresolved external symbol "int const DEFAULT_STRING_LENGTH" (?DEFAULT_STRING_LENGTH@@3HB)
-Product.obj : error LNK2001: unresolved external symbol "int const DEFAULT_STRING_LENGTH" (?DEFAULT_STRING_LENGTH@@3HB)
-Category.obj : error LNK2001: unresolved external symbol "char const * const CATEGORIES_FILE_NAME" (?CATEGORIES_FILE_NAME@@3QEBDEB)
-Manager.obj : error LNK2001: unresolved external symbol "char const * const CATEGORIES_FILE_NAME" (?CATEGORIES_FILE_NAME@@3QEBDEB)
-    Hint on symbols that are defined and could potentially match:
-      "char const * const CATEGORIES_FILE_NAME" (?CATEGORIES_FILE_NAME@@3PEBDEB)
-Manager.obj : error LNK2001: unresolved external symbol "char const * const CASHIERS_FILE_NAME" (?CASHIERS_FILE_NAME@@3QEBDEB)
-Supermarket_OOP_Veliko.obj : error LNK2001: unresolved external symbol "char const * const CASHIERS_FILE_NAME" (?CASHIERS_FILE_NAME@@3QEBDEB)
-    Hint on symbols that are defined and could potentially match:
-      "char const * const CASHIERS_FILE_NAME" (?CASHIERS_FILE_NAME@@3PEBDEB)
-Manager.obj : error LNK2001: unresolved external symbol "char const * const PRODUCTS_FILE_NAME" (?PRODUCTS_FILE_NAME@@3QEBDEB)
-Product.obj : error LNK2001: unresolved external symbol "char const * const PRODUCTS_FILE_NAME" (?PRODUCTS_FILE_NAME@@3QEBDEB)
-Supermarket_OOP_Veliko.obj : error LNK2001: unresolved external symbol "char const * const PRODUCTS_FILE_NAME" (?PRODUCTS_FILE_NAME@@3QEBDEB)
-    Hint on symbols that are defined and could potentially match:
-      "char const * const PRODUCTS_FILE_NAME" (?PRODUCTS_FILE_NAME@@3PEBDEB)
-Manager.obj : error LNK2001: unresolved external symbol "char const * const MANAGERS_FILE_NAME" (?MANAGERS_FILE_NAME@@3QEBDEB)
-Supermarket_OOP_Veliko.obj : error LNK2001: unresolved external symbol "char const * const MANAGERS_FILE_NAME" (?MANAGERS_FILE_NAME@@3QEBDEB)
-Manager.obj : error LNK2001: unresolved external symbol "class MyString const PRODUCTS_WORD_NEW" (?PRODUCTS_WORD_NEW@@3VMyString@@B)
-Product.obj : error LNK2001: unresolved external symbol "class MyString const PRODUCTS_WORD_NEW" (?PRODUCTS_WORD_NEW@@3VMyString@@B)
-Supermarket_OOP_Veliko.obj : error LNK2001: unresolved external symbol "class MyString const PRODUCTS_WORD_NEW" (?PRODUCTS_WORD_NEW@@3VMyString@@B)
-C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\x64\Debug\Supermarket_OOP_Veliko.exe : fatal error LNK1120: 6 unresolved externals
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(18,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(18,1): error C2371: 'Cashier': redefinition; different basic types
+  C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(13,2):
+  see declaration of 'Cashier'
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(18,9): error C2146: syntax error: missing ';' before identifier 'cash'
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(19,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(19,1): error C2371: 'Manager': redefinition; different basic types
+  C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(14,2):
+  see declaration of 'Manager'
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(19,9): error C2146: syntax error: missing ';' before identifier 'man'
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(87,24): error C2065: 'currentUser': undeclared identifier
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(107,24): error C2065: 'currentUser': undeclared identifier
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(197,6): warning C4551: function call missing argument list
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(403,21): error C2065: 'currentUser': undeclared identifier
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko.cpp(403,12): error C2541: 'delete': cannot delete objects that are not pointers
+  Generating Code...
