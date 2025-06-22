@@ -6,17 +6,24 @@
 using namespace std;
 class Product
 {
-protected:
+private:
 	char* name;
-	char* category;
+	int categoryId;
 	double price;
 	void copyFrom(Product& prod);
 	void free();
 public:
 	Product();
 	Product(Product& const prod);
-	Product(char* const _name, char* _cat, double const _price);
+	Product(char* _name, int _cat, double _price);
 	~Product();
+
+	virtual MyString getType() = 0;
+	MyString getName();
+	int getCatId();
+	double getPrice();
+	virtual int getCount() = 0;
+	virtual double getWeight() = 0;
 };
 int productExists(char* name);
 

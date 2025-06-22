@@ -24,7 +24,9 @@ public:
     //MyString & append(const MyString & other);
     char* getString() const;
 };
-MyString* stringToArray(const MyString& input, char delimiter, int& outSize);
-MyString* stringToArray(const MyString& input, char delimiter);
+MyString* stringToArray(MyString& input, char delimiter, int& outSize);
+MyString* stringToArray(MyString& input, char delimiter);
 bool tryConvertToInt(const char* str, int& result);
 bool convertToString(int num, MyString& res);
+bool tryConvertToDouble(const MyString& input, double& result);
+bool convertDoubleToString(double value, MyString& result, int precision);

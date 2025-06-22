@@ -16,6 +16,10 @@ public:
 	Category(Category& const cat);
 	Category(int _id, char* _name, char* _description);
 	~Category();
+
+	int getId();
+	MyString getName();
+	MyString getDescription();
 };
 
 int categoryExists(char* name);

@@ -3,16 +3,19 @@
 #include "Constants.h"
 using namespace std;
 class ProductByUnit :
-    protected Product
+    public Product
 {
+private:
+    MyString type = "Unit";
     int count;
-protected:
-    void free();
     void copyFrom(ProductByUnit& prod);
 public: 
     ProductByUnit();
     ProductByUnit(ProductByUnit& prod);
-    ProductByUnit(char* name, char* cat, double price, int count);
-    ~ProductByUnit();
+    ProductByUnit(char* name, int cat, double price, int count);
+    MyString getType() override;
+
+    int getCount() override;
+    double getWeight() override;
 };
 

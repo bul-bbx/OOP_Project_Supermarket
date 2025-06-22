@@ -138,6 +138,23 @@ Employee::~Employee()
 	free();
 }
 
+Employee& Employee::operator= (Employee& const other) {
+	if (this != &other) {
+		free();
+		copyFrom(other);
+	}
+	return *this;
+}
+
+int Employee::getId()
+{
+	return id;
+}
+
+bool Employee::ComparePass(MyString pass) {
+	return pass.compare(password);
+}
+
 
 //Returns -1 if the file did not open
 int getLatestWorkerId() {

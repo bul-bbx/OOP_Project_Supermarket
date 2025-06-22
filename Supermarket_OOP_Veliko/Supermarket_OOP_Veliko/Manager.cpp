@@ -24,7 +24,7 @@ char getRandomLetterLower()
 	return randomLetter;
 }
 
-char* createSpecialKey()
+MyString createSpecialKey()
 {
 	char* key = new char[8];
 	key[0] = getRandomNumAsChar();
@@ -35,7 +35,7 @@ char* createSpecialKey()
 	key[5] = getRandomNumAsChar();
 	key[6] = getRandomLetterLower();
 	key[7] = '\0';
-	return key;
+	return MyString(key);
 }
 
 void Manager::copyFrom(Manager& const man)
@@ -560,64 +560,6 @@ void Manager::addProduct(int const productType)
 
 void Manager::deleteProduct(int const productId)
 {
-	ifstream file(PRODUCTS_FILE_NAME);
-	if (!file.is_open()) {
-		cout << "File '" << PRODUCTS_FILE_NAME << "' failed to open." << endl;
-		return;
-	}
-	int length = 0;
-	int latestId = 0;
-	int line = 0;
-	file >> latestId;
-	file >> length;
-	for (int i = 0; i < length; i++) {
-		MyString input = "";
-		file >> input.data;
-		int tempId = 0;
-		int k = 0;
-		MyString* words = stringToArray(input, ':');
-		if (words[0].compare(PRODUCTS_WORD_NEW)) {
-			while (words[1].data[k] != '\0') {
-				tempId = tempId * 10 + words[1].data[k] - '0';
-			}
-			if (tempId == productId) {
-				line = i;
-				break;
-			}
-		}
-		else {
-			while (words[0].data[k] != '\0') {
-				tempId = tempId * 10 + words[0].data[k] - '0';
-			}
-			if (tempId == productId) {
-				line = i;
-				break;
-			}
-		}
-	}
-	file.close();
-
-	//Reduce the number length in the file
-	length--;
-	int lengthI = 0;
-	int temp = length;
-	int divisor = 1;
-	while (temp != 0) {
-		lengthI++;
-		length /= 10;
-		divisor *= 10;
-	}
-	char* lengthChar = new char[lengthI];
-
-	for (int i = 0; i < lengthI; i++)
-	{
-		lengthChar[i] = length / divisor;
-		length %= divisor;
-		divisor / 10;
-	}
-
-	deleteLineFromFile(PRODUCTS_FILE_NAME, line + 1);
-	replaceLineInFile(PRODUCTS_FILE_NAME, 1, lengthChar);
 }
 
 void Manager::loadProducts(char* fileName)
@@ -636,16 +578,43 @@ Manager& Manager::operator=(Manager& other)
 	}
 	return *this;
 }
-Manager& Manager::operator=(MyString* other)
-{
-	int UId = 0;
-	tryConvertToInt(other[0].data, UId);
-	int age = 0;
-	tryConvertToInt(other[4].data, age);
-	Manager otherM(UId, other[1].data, other[2].data, other[3].data, age, other[5].data);
-	if (this != &otherM) {
-		free();
-		copyFrom(otherM);
-	}
-	return *this;
+
+int Manager::getId() {
+	return id;
+}
+
+MyString Manager::getFirstName() {
+	return firstName;
+}
+
+MyString Manager::getLastName() {
+	return familyName;
+}
+
+MyString Manager::getTelephone() {
+	return telephoneNumber;
+}
+
+short Manager::getAge() {
+	return age;
+}
+
+MyString Manager::getPassword() {
+	return password;
+}
+
+MyString Manager::getType() {
+	return type;
+}
+
+int Manager::getTransactions() {
+	return 0;
+}
+
+int Manager::getWarningPoints() {
+	return 0;
+}
+
+bool Manager::isApproved() {
+	return 1;
 }

@@ -9,9 +9,10 @@
 #include <cstdlib>
 #include <ctime> 
 class Manager :
-    protected Employee
+    public Employee
 {
-protected:
+private:
+    MyString type = "Manager";
     void copyFrom(Manager& const man);
     void free();
 public:
@@ -34,11 +35,22 @@ public:
     void loadProducts(char* fileName);
     void loadGiftCards(char* fileName);
     Manager& operator=(Manager& other);
-    Manager& operator=(MyString* other);
+
+    int getId() override;
+    MyString getFirstName() override;
+    MyString getLastName() override;
+    MyString getType() override;
+    MyString getTelephone() override;
+    short getAge() override;
+    MyString getPassword() override;
+
+    int getTransactions() override;
+    int getWarningPoints() override;
+    bool isApproved() override;
 };
 
 char getRandomNumAsChar();
 char getRandomLetterUpper();
 char getRandomLetterLower();
-char* createSpecialKey();
+MyString createSpecialKey();
 

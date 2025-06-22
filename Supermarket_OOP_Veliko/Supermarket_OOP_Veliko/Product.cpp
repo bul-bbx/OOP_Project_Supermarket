@@ -14,14 +14,7 @@ void Product::copyFrom(Product& prod)
 		name[i] = prod.name[i];
 	}
 	
-	i = 0;
-	while (prod.category[i] != '\0') {
-		i++;
-	}
-	category = new char[i];
-	for (int k = 0; k < i; k++) {
-		category[i] = prod.category[i];
-	}
+	categoryId = prod.categoryId;
 
 	price = prod.price;
 }
@@ -29,13 +22,12 @@ void Product::copyFrom(Product& prod)
 void Product::free()
 {
 	delete[] name;
-	delete[] category;
 }
 
 Product::Product()
 {
 	price = 0;
-	category = new char[DEFAULT_STRING_LENGTH];
+	categoryId = -1;
 	name = new char[DEFAULT_STRING_LENGTH];
 }
 
@@ -44,7 +36,7 @@ Product::Product(Product& const prod)
 	copyFrom(prod);
 }
 
-Product::Product(char* const _name, char* _cat, double const _price)
+Product::Product(char* const _name, int _cat, double const _price)
 {
 	int k = 0;
 	while (_name[k] != '\0') {
@@ -55,20 +47,25 @@ Product::Product(char* const _name, char* _cat, double const _price)
 		name[i] = _name[i];
 	}
 
-	k = 0;
-	while (_cat[k] != '\0') {
-		k++;
-	}
-	category = new char[k];
-	for (int i = 0; i < k; i++) {
-		category[i] = _cat[i];
-	}
+	categoryId = _cat;
 
 	price = _price;
 }
 
 Product::~Product() {
 	free();
+}
+
+MyString Product::getName() {
+	return name;
+}
+
+int Product::getCatId() {
+	return categoryId;
+}
+
+double Product::getPrice() {
+	return price;
 }
 
 int productExists(char* name)

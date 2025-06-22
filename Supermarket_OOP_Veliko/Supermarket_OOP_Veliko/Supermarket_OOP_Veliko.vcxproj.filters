@@ -54,6 +54,21 @@
     <ClCompile Include="Constants.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Warning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCategoryVoucher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultipleCategoryVoucher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AllProductsVoucher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cashier.h">
@@ -84,6 +99,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleCategoryVoucher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultipleCategoryVoucher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AllProductsVoucher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

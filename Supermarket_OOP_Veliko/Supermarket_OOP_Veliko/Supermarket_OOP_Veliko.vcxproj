@@ -127,31 +127,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AllProductsVoucher.cpp" />
     <ClCompile Include="Cashier.cpp" />
     <ClCompile Include="Category.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Constants.cpp" />
     <ClCompile Include="Constants.h" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="Instance.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="MultipleCategoryVoucher.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductByUnit.cpp" />
     <ClCompile Include="ProductByWeight.cpp" />
+    <ClCompile Include="SingleCategoryVoucher.cpp" />
     <ClCompile Include="Supermarket_OOP_Veliko.cpp" />
     <ClCompile Include="Voucher.cpp" />
+    <ClCompile Include="Warning.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllProductsVoucher.h" />
     <ClInclude Include="Cashier.h" />
     <ClInclude Include="Category.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Instance.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="MultipleCategoryVoucher.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductByUnit.h" />
     <ClInclude Include="ProductByWeight.h" />
+    <ClInclude Include="SingleCategoryVoucher.h" />
     <ClInclude Include="Voucher.h" />
+    <ClInclude Include="Warning.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

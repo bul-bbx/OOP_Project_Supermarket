@@ -58,6 +58,21 @@ Category::~Category()
 	free();
 }
 
+int Category::getId()
+{
+	return id;
+}
+
+MyString Category::getName()
+{
+	return MyString(name);
+}
+
+MyString Category::getDescription()
+{
+	return MyString(description);
+}
+
 int categoryExists(char* name)
 {
 	bool success = 0;

@@ -147,7 +147,7 @@ char* MyString::getString() const
     return this->data;
 }
 
-MyString* stringToArray(const MyString& input, char delimiter, int& outSize)
+MyString* stringToArray(MyString& input, char delimiter, int& outSize)
 {
     int segments = 1;
     for (int i = 0; i < input.length; i++) {
@@ -183,7 +183,7 @@ MyString* stringToArray(const MyString& input, char delimiter, int& outSize)
     return res;
 }
 
-MyString* stringToArray(const MyString& input, char delimiter)
+MyString* stringToArray(MyString& input, char delimiter)
 {
     int segments = 1;
     for (int i = 0; i < input.length; i++) {
@@ -288,4 +288,97 @@ bool convertToString(int num, MyString& res) {
     res = str;
     delete[] str;
     return true;
+}
+
+bool convertDoubleToString(double value, MyString& result, int precision) {
+    char buffer[64];  // enough space for typical doubles
+    int i = 0;
+
+    // Handle negative
+    if (value < 0) {
+        buffer[i++] = '-';
+        value = -value;
+    }
+
+    // Integer part
+    long long intPart = static_cast<long long>(value);
+    double fracPart = value - intPart;
+
+    // Convert integer part to string (reverse it first)
+    char temp[32];
+    int tempIndex = 0;
+
+    if (intPart == 0)
+        temp[tempIndex++] = '0';
+    else {
+        while (intPart > 0) {
+            temp[tempIndex++] = '0' + (intPart % 10);
+            intPart /= 10;
+        }
+    }
+
+    // Copy reversed integer part into buffer
+    for (int j = tempIndex - 1; j >= 0; --j)
+        buffer[i++] = temp[j];
+
+    // Decimal point
+    buffer[i++] = '.';
+
+    // Convert fractional part
+    for (int p = 0; p < precision; ++p) {
+        fracPart *= 10;
+        int digit = static_cast<int>(fracPart);
+        buffer[i++] = '0' + digit;
+        fracPart -= digit;
+    }
+
+    buffer[i] = '\0';  // null-terminate
+
+    result = MyString(buffer);
+    return true;
+}
+
+bool tryConvertToDouble(const MyString& input, double& result) {
+    const char* str = input.data;
+    if (!str || *str == '\0') return false;
+
+    result = 0.0;
+    bool isNegative = false;
+    bool seenDot = false;
+    double fraction = 0.0;
+    double divisor = 10.0;
+
+    int i = 0;
+
+    if (str[i] == '-') {
+        isNegative = true;
+        i++;
+    }
+
+    bool valid = false;
+
+    for (; str[i] != '\0'; ++i) {
+        if (str[i] >= '0' && str[i] <= '9') {
+            int digit = str[i] - '0';
+            if (seenDot) {
+                fraction += digit / divisor;
+                divisor *= 10.0;
+            }
+            else {
+                result = result * 10.0 + digit;
+            }
+            valid = true;
+        }
+        else if (str[i] == '.') {
+            if (seenDot) return false; // multiple dots
+            seenDot = true;
+        }
+        else {
+            return false; // invalid character
+        }
+    }
+
+    if (isNegative) result = -result;
+    result += isNegative ? -fraction : fraction;
+    return valid;
 }

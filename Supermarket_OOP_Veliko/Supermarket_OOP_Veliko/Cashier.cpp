@@ -43,8 +43,57 @@ Cashier::~Cashier() {
 	free();
 }
 
+Cashier& Cashier::operator= (Cashier& const other) {
+	if (this != &other) {
+		free();
+		copyFrom(other);
+	}
+	return *this;
+}
+
 void Cashier::sell() const
 {
 
-};
+}
+int Cashier::getId()
+{
+	return id;
+}
+MyString Cashier::getFirstName()
+{
+	return firstName;
+}
+MyString Cashier::getLastName()
+{
+	return familyName;
+}
+MyString Cashier::getType()
+{
+	return type;
+}
+MyString Cashier::getTelephone()
+{
+	return telephoneNumber;
+}
+short Cashier::getAge()
+{
+	return age;
+}
+MyString Cashier::getPassword()
+{
+	return password;
+}
+int Cashier::getTransactions()
+{
+	return transactions;
+}
+int Cashier::getWarningPoints()
+{
+	return warningPoints;
+}
+bool Cashier::isApproved()
+{
+	return approved;
+}
+;
 
