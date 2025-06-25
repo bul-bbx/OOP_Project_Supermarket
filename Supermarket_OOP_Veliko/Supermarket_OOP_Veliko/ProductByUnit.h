@@ -12,7 +12,7 @@ private:
 public: 
     ProductByUnit();
     ProductByUnit(ProductByUnit& prod);
-    ProductByUnit(char* name, int cat, double price, int count);
+    ProductByUnit(int id, char* name, int cat, double price, int count);
     MyString getType() override;
 
     int getCount() override;

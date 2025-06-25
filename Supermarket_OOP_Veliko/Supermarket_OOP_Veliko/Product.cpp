@@ -36,8 +36,9 @@ Product::Product(Product& const prod)
 	copyFrom(prod);
 }
 
-Product::Product(char* const _name, int _cat, double const _price)
+Product::Product(int _id, char* const _name, int _cat, double const _price)
 {
+	id = _id;
 	int k = 0;
 	while (_name[k] != '\0') {
 		k++;
@@ -54,6 +55,11 @@ Product::Product(char* const _name, int _cat, double const _price)
 
 Product::~Product() {
 	free();
+}
+
+int Product::getId()
+{
+	return id;
 }
 
 MyString Product::getName() {

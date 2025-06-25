@@ -16,7 +16,7 @@ ProductByWeight::ProductByWeight(ProductByWeight& prod) : Product(prod)
 	copyFrom(prod);
 }
 
-ProductByWeight::ProductByWeight(char* _name, int _category, double _price, double _weight) : Product(_name, _category, _price)
+ProductByWeight::ProductByWeight(int id, char* _name, int _category, double _price, double _weight) : Product(id, _name, _category, _price)
 {
 	weight = _weight;
 }

@@ -17,27 +17,29 @@ void MyString::copyDynamicMemory(const MyString& other)
 void MyString::free()
 {
     delete[] this->data;
+    data = nullptr;
+    this->length = 0;
 }
 
 MyString::MyString()
 {
-    data = nullptr;
     length = 0;
+    data = new char [length + 1];
+    data[length] = '\0';
 }
 
 int getLength(const char* data) {
     int i = 0;
-    while (data[i] != '\0') {
+    while (data[i] != '\0' && data[i] > 0) {
         i++;
     }
-    i++;
     return i;
 }
 
 MyString::MyString(const char* _data)
 {
-    length = getLength(data);
-    data = new char[length];
+    length = getLength(_data);
+    data = new char[length+1];
     for (int i = 0; i < length; i++) {
         data[i] = _data[i];
     }
@@ -45,15 +47,12 @@ MyString::MyString(const char* _data)
 
 MyString::MyString(char* _data, int _length)
 {
-    int k = 0;
-    while (_data[k] != '\0') {
-        k++;
-    }
-    data = new char[k];
-    for (int i = 0; i < k; i++) {
+    length = _length;
+    data = new char[length + 1];
+    for (int i = 0; i < length; i++) {
         this->data[i] = _data[i];
     }
-    length = _length;
+    data[length] = '\0';
 }
 
 MyString::MyString(const MyString& other)
@@ -127,6 +126,19 @@ bool MyString::compare(const MyString& other)
             return false;
     }
     return true;
+
+}
+
+bool MyString::compare(MyString& other) 
+{
+    if (length != other.length)
+        return false;
+
+    for (int i = 0; i < other.length; i++) {
+        if (data[i] != other.data[i])
+            return false;
+    }
+    return true;
 }
 
 MyString& MyString::append(const char* other)
@@ -145,6 +157,41 @@ MyString& MyString::append(const MyString& other)
 char* MyString::getString() const
 {
     return this->data;
+}
+
+ostream& operator<<(ostream& os, MyString& str)
+{
+    return os << str.getString();
+}
+
+istream& operator>>(istream& is, MyString& str) {
+    int capacity = 16;  // initial buffer size
+    char* buffer = new char[capacity];
+    int length = 0;
+    char ch;
+
+    while (is.get(ch)) {
+        if (ch == '\n' || ch == '\0') break;
+        if (ch < 0) break;
+        // Resize if needed
+        if (length + 1 >= capacity) {
+            capacity *= 2;
+            char* newBuffer = new char[capacity];
+            for (int i = 0; i < length; i++) {
+                newBuffer[i] = buffer[i];
+            }
+            delete[] buffer;
+            buffer = newBuffer;
+        }
+        buffer[length++] = ch;
+    }
+
+    buffer[length] = '\0';  // null-terminate
+
+    str = buffer;
+    delete[] buffer;
+
+    return is;
 }
 
 MyString* stringToArray(MyString& input, char delimiter, int& outSize)
@@ -204,7 +251,8 @@ MyString* stringToArray(MyString& input, char delimiter)
             }
             word[currentLength] = '\0';
 
-            res[currentWord] = word;
+            res[currentWord] = MyString(word);
+
             delete[] word;
 
             currentWord++;
@@ -219,7 +267,7 @@ MyString* stringToArray(MyString& input, char delimiter)
 }
 
 bool tryConvertToInt(const char* str, int& result) {
-    if (str == nullptr) return false;
+    if (!str || *str == '\0') return false;
 
     result = 0;
     bool isNegative = false;

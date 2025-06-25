@@ -16,7 +16,7 @@ ProductByUnit::ProductByUnit(ProductByUnit& prod) : Product(prod)
 	copyFrom(prod);
 }
 
-ProductByUnit::ProductByUnit(char* _name, int _cat, double _price, int _count) : Product(_name, _cat, _price)
+ProductByUnit::ProductByUnit(int id, char* _name, int _cat, double _price, int _count) : Product(id, _name, _cat, _price)
 {
 	count = _count;
 }

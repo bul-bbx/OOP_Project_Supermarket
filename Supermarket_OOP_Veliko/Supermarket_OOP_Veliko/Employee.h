@@ -20,15 +20,16 @@ public:
 	Employee(int id, char* firstName, char* familyName, char* telephoneNumber, short age, char* password);
 	~Employee();
 	Employee& operator=(Employee& const other);
-	virtual int getId() = 0;
-	virtual bool ComparePass(MyString pass);
-	virtual MyString getFirstName() = 0;
-	virtual MyString getLastName() = 0;
-	virtual MyString getTelephone() = 0;
-	virtual short getAge() = 0;
-	virtual MyString getPassword() = 0;
+	int getId();
+	MyString getFirstName();
+	MyString getLastName();
+	MyString getTelephone();
+	short getAge();
+	MyString getPassword();
 	virtual MyString getType() = 0;
 
+	virtual void approve() = 0;
+	virtual void warn(int points) = 0;
 	virtual int getTransactions() = 0;
 	virtual int getWarningPoints() = 0;
 	virtual bool isApproved() = 0;

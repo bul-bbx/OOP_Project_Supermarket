@@ -55,33 +55,19 @@ void Cashier::sell() const
 {
 
 }
-int Cashier::getId()
+void Cashier::approve()
 {
-	return id;
+	approved = 1;
 }
-MyString Cashier::getFirstName()
+
+void Cashier::warn(int points)
 {
-	return firstName;
+	warningPoints += points;
 }
-MyString Cashier::getLastName()
-{
-	return familyName;
-}
+
 MyString Cashier::getType()
 {
 	return type;
-}
-MyString Cashier::getTelephone()
-{
-	return telephoneNumber;
-}
-short Cashier::getAge()
-{
-	return age;
-}
-MyString Cashier::getPassword()
-{
-	return password;
 }
 int Cashier::getTransactions()
 {

@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+using namespace std;
 
 class MyString
 {
@@ -20,10 +22,13 @@ public:
     MyString& append(char* other, int length);
     MyString& append(const MyString& other);
     bool compare(const MyString& other);
+    bool compare(MyString& other);
 
     //MyString & append(const MyString & other);
     char* getString() const;
 };
+ostream& operator<<(ostream& os, MyString& str);
+istream& operator>>(istream& is, MyString& str);
 MyString* stringToArray(MyString& input, char delimiter, int& outSize);
 MyString* stringToArray(MyString& input, char delimiter);
 bool tryConvertToInt(const char* str, int& result);

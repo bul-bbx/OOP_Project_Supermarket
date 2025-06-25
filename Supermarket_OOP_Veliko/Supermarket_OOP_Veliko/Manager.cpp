@@ -62,6 +62,16 @@ Manager::~Manager()
 	free();
 }
 
+void Manager::approve()
+{
+	return;
+}
+
+void Manager::warn(int points)
+{
+	return;
+}
+
 void Manager::listPending() const
 {
 	ifstream cashiers(CASHIERS_FILE_NAME);
@@ -577,30 +587,6 @@ Manager& Manager::operator=(Manager& other)
 		copyFrom(other);
 	}
 	return *this;
-}
-
-int Manager::getId() {
-	return id;
-}
-
-MyString Manager::getFirstName() {
-	return firstName;
-}
-
-MyString Manager::getLastName() {
-	return familyName;
-}
-
-MyString Manager::getTelephone() {
-	return telephoneNumber;
-}
-
-short Manager::getAge() {
-	return age;
-}
-
-MyString Manager::getPassword() {
-	return password;
 }
 
 MyString Manager::getType() {

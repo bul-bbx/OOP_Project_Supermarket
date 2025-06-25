@@ -19,14 +19,10 @@ public:
     ~Cashier();
     Cashier& operator= (Cashier& const other);
     void sell() const;
+    void approve() override;
+    void warn(int points) override;
 
-    int getId() override;
-    MyString getFirstName() override;
-    MyString getLastName() override;
     MyString getType() override;
-    MyString getTelephone() override;
-    short getAge() override;
-    MyString getPassword() override;
 
     int getTransactions() override;
     int getWarningPoints() override;

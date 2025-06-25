@@ -10,7 +10,7 @@ private:
 public:
     ProductByWeight();
     ProductByWeight(ProductByWeight& prod);
-    ProductByWeight(char* _name, int _category, double _price, double _weight);
+    ProductByWeight(int id, char* _name, int _category, double _price, double _weight);
     MyString getType() override;
 
     int getCount() override;

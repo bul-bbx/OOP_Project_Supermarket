@@ -25,7 +25,7 @@ class Instance
 	const size_t MAX_WARNINGS = 1000;
 
 
-	
+
 public:
 	int latestEmployeeId;
 	Employee** employees = new Employee * [MAX_USERS];
@@ -65,5 +65,16 @@ public:
 	void listWorkers() const;
 	void listProducts() const;
 	void listProductsCategory(MyString cat) const;
+	void cashierApprove(int cId) const;
+	void cashierDecline(int cId) const;
+	void listWarnedCashiers(int points) const;
+	void warnCashier(int cId, int severity) const;
+	void promoteCashier(int cId) const;
+	void fireCashier(int cId) const;
+	void addCategory();
+	void addProduct();
+	void deleteProduct(int cId);
+	void loadProducts(MyString fileName);
+	void loadGiftCards(MyString fileName);
 };
 

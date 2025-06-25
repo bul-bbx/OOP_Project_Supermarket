@@ -151,10 +151,25 @@ int Employee::getId()
 	return id;
 }
 
-bool Employee::ComparePass(MyString pass) {
-	return pass.compare(password);
+MyString Employee::getFirstName() {
+	return firstName;
 }
 
+MyString Employee::getLastName() {
+	return familyName;
+}
+
+MyString Employee::getTelephone() {
+	return telephoneNumber;
+}
+
+short Employee::getAge() {
+	return age;
+}
+
+MyString Employee::getPassword() {
+	return password;
+}
 
 //Returns -1 if the file did not open
 int getLatestWorkerId() {

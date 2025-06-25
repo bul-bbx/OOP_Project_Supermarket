@@ -7,6 +7,7 @@ using namespace std;
 class Product
 {
 private:
+	int id;
 	char* name;
 	int categoryId;
 	double price;
@@ -15,9 +16,10 @@ private:
 public:
 	Product();
 	Product(Product& const prod);
-	Product(char* _name, int _cat, double _price);
+	Product(int id, char* _name, int _cat, double _price);
 	~Product();
 
+	int getId();
 	virtual MyString getType() = 0;
 	MyString getName();
 	int getCatId();

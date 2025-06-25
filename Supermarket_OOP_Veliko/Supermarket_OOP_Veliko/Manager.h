@@ -36,13 +36,9 @@ public:
     void loadGiftCards(char* fileName);
     Manager& operator=(Manager& other);
 
-    int getId() override;
-    MyString getFirstName() override;
-    MyString getLastName() override;
     MyString getType() override;
-    MyString getTelephone() override;
-    short getAge() override;
-    MyString getPassword() override;
+    void approve() override;
+    void warn(int points) override;
 
     int getTransactions() override;
     int getWarningPoints() override;

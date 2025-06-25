@@ -18,7 +18,7 @@ void Instance::run()
 
 	MyString input = "";
 	while (!input.compare("END")) {
-		cin >> input.data;
+		cin >> input;
 		int size = 0;
 		MyString* words = stringToArray(input, ' ', size);
 		if (role == None) {
@@ -100,35 +100,76 @@ void Instance::run()
 													}
 													else {
 														if (words[0].compare("approve")) {
-
+															int cId = 0;
+															tryConvertToInt(words[1].data, cId);
+															cashierApprove(cId);
 														}
 														else {
 															if (words[0].compare("decline")) {
-
+																int cId = 0;
+																tryConvertToInt(words[1].data, cId);
+																cashierDecline(cId);
 															}
 															else {
 																if (words[0].compare("list-warned-cashier")) {
-
+																	int points = 0;
+																	tryConvertToInt(words[1].data, points);
+																	listWarnedCashiers(points);
 																}
 																else {
 																	if (words[0].compare("warn-cashier")) {
-
+																		int cId = 0;
+																		tryConvertToInt(words[1].data, cId);
+																		if(words[2].compare("Low")) {
+																			warnCashier(cId, 100);
+																		}
+																		if (words[2].compare("Mid")) {
+																			warnCashier(cId, 200);
+																		}
+																		if (words[2].compare("High")) {
+																			warnCashier(cId, 300);
+																		}
 																	}
 																	else {
 																		if (words[0].compare("promote-cashier")) {
-
+																			int cId = 0;
+																			tryConvertToInt(words[1].data, cId);
+																			promoteCashier(cId);
 																		}
 																		else {
 																			if (words[0].compare("fire-cashier")) {
-																			
+																				int cId = 0;
+																				tryConvertToInt(words[1].data, cId);
+																				fireCashier(cId);
 																			}
 																			else {
 																				if (words[0].compare("add-category")) {
-
+																					addCategory();
 																				}
 																				else {
-																					cout << "Unknown command!" << endl;
-
+																					if (words[0].compare("add-product")) {
+																						addProduct();
+																					}
+																					else {
+																						if (words[0].compare("delete-product")) {
+																							int pId = 0;
+																							tryConvertToInt(words[1].data, pId);
+																							deleteProduct(pId);
+																						}
+																						else {
+																							if (words[0].compare("load-products")) {
+																								loadProducts(words[1]);
+																							}
+																							else {
+																								if (words[0].compare("load-gift-cards")) {
+																									loadGiftCards(words[1]);
+																								}
+																								else {
+																									cout << "Unknown command!" << endl;
+																								}
+																							}
+																						}
+																					}
 																				}
 																			}
 																		}
@@ -161,16 +202,16 @@ Instance::Instance()
 			cout << "Failed to open save file!" << endl;
 		}
 		man >> managersCount;
+		man.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		for (int i = employeeCount; i < managersCount && i < MAX_USERS; i++) {
 			MyString input;
-			man >> input.data;
+			man >> input;
 			MyString* arr = stringToArray(input, ':');
 			int idM = 0;
 			tryConvertToInt(arr[0].data, idM);
 			int ageM = 0;
 			tryConvertToInt(arr[4].data, ageM);
-			Manager m (idM, arr[1].data, arr[2].data, arr[3].data, ageM, arr[5].data);
-			employees[i] = &m;
+			employees[i] = new Manager(idM, arr[1].data, arr[2].data, arr[3].data, ageM, arr[5].data);
 			delete[] arr;
 		}
 		man.close();
@@ -182,6 +223,7 @@ Instance::Instance()
 			cout << "Failed to open save file!" << endl;
 		}
 		cash >> cashiersCount;
+		cash.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		int lengthUse = 0;
 		if (managersCount + cashiersCount > MAX_USERS) {
 			lengthUse = MAX_USERS;
@@ -191,7 +233,7 @@ Instance::Instance()
 		}
 		for (int i = managersCount; i < lengthUse; i++) {
 			MyString input;
-			cash >> input.data;
+			cash >> input;
 			MyString* arr = stringToArray(input, ':');
 			int idC = 0;
 			tryConvertToInt(arr[0].data, idC);
@@ -204,8 +246,7 @@ Instance::Instance()
 			int approved = 0;
 			tryConvertToInt(arr[8].data, approved);
 			bool approvedB = approved;
-			Cashier c(idC, arr[1].data, arr[2].data, arr[3].data, ageC, arr[5].data, transactions, warningId, approvedB);
-			employees[i] = &c;
+			employees[i] = new Cashier(idC, arr[1].data, arr[2].data, arr[3].data, ageC, arr[5].data, transactions, warningId, approvedB);
 			delete[] arr;
 		}
 		employeeCount = lengthUse;
@@ -216,6 +257,7 @@ Instance::Instance()
 		cout << "Failed to open save file!" << endl;
 	}
 	lId >> latestEmployeeId;
+	lId.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	lId.close();
 	//
 
@@ -225,30 +267,29 @@ Instance::Instance()
 		cout << "Failed to open save file!" << endl;
 	}
 	prod >> latestProductId;
+	prod.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	prod >> productCount;
+	prod.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	for (int i = 0; i < productCount; i++) {
 		MyString input;
-		prod >> input.data;
+		prod >> input;
 		MyString* arr = stringToArray(input, ':');
+		int id = 0;
+		tryConvertToInt(arr[2].data, id);
+		double price = 0;
+		tryConvertToDouble(arr[4].data, price);
+		int catId = 0;
+		tryConvertToInt(arr[3].data, catId);
 		if (arr[0].compare("Unit")) {
-			double price = 0;
-			tryConvertToDouble(arr[2].data, price);
-			int catId = 0;
-			tryConvertToInt(arr[1].data, catId);
 			int count = 0;
-			tryConvertToInt(arr[3].data, count);
-			ProductByUnit p(arr[0].data, catId, price, count);
-			products[i] = &p;
+			tryConvertToInt(arr[5].data, count);
+
+			products[i] = new ProductByUnit(id, arr[1].data, catId, price, count);
 		}
 		else {
-			double price = 0;
-			tryConvertToDouble(arr[2].data, price);
-			int catId = 0;
-			tryConvertToInt(arr[1].data, catId);
 			double weight = 0;
-			tryConvertToDouble(arr[3].data, weight);
-			ProductByWeight p(arr[0].data, catId, price, weight);
-			products[i] = &p;
+			tryConvertToDouble(arr[5].data, weight);
+			products[i] = new ProductByWeight(id, arr[1].data, catId, price, weight);
 		}
 		delete[] arr;
 	}
@@ -261,15 +302,16 @@ Instance::Instance()
 		cout << "Failed to open save file!" << endl;
 	}
 	cats >> lastestCategoryId;
+	cats.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	cats >> categoryCount;
+	cats.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	for (int i = 0; i < categoryCount; i++) {
 		MyString input;
 		cats >> input.data;
 		MyString* arr = stringToArray(input, ':');
 		int catId = 0;
 		tryConvertToInt(arr[0].data, catId);
-		Category c(catId, arr[1].data, arr[2].data);
-		categories[i] = &c;
+		categories[i] = new Category(catId, arr[1].data, arr[2].data);
 		delete[] arr;
 	}
 	cats.close();
@@ -281,18 +323,19 @@ Instance::Instance()
 		cout << "Failed to open save file!" << endl;
 	}
 	vou >> latestVoucherId;
+	vou.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	vou >> voucherCount;
+	vou.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	for (int i = 0; i < voucherCount; i++) {
 		MyString input;
-		vou >> input.data;
+		vou >> input;
 		MyString* arr = stringToArray(input, ':');
 		if (arr[0].compare("All")) {
 			int id = 0;
 			tryConvertToInt(arr[1].data, id);
 			double perc = 0;
 			tryConvertToDouble(arr[2].data, perc);
-			AllProductsVoucher a(id, perc, arr[3]);
-			vouchers[i] = &a;
+			vouchers[i] = new AllProductsVoucher(id, perc, arr[3]);
 		}
 		else if (arr[0].compare("Single")) {
 			int id = 0;
@@ -301,8 +344,7 @@ Instance::Instance()
 			tryConvertToDouble(arr[2].data, perc);
 			int catId = 0;
 			tryConvertToInt(arr[3].data, catId);
-			SingleCategoryVoucher s(id, catId, perc, arr[4]);
-			vouchers[i] = &s;
+			vouchers[i] = new SingleCategoryVoucher(id, catId, perc, arr[4]);
 		}
 		else {
 			int id = 0;
@@ -317,8 +359,7 @@ Instance::Instance()
 			}
 			double perc = 0;
 			tryConvertToDouble(arr[catCount + 2].data, perc);
-			MultipleCategoryVoucher m(id, catCount, cates, perc, arr[catCount + 3]);
-			vouchers[i] = &m;
+			vouchers[i] = new MultipleCategoryVoucher(id, catCount, cates, perc, arr[catCount + 3]);
 		}
 		delete[] arr;
 	}
@@ -331,10 +372,12 @@ Instance::Instance()
 		cout << "Failed to open save file!" << endl;
 	}
 	warns >> latestWarningId;
+	warns.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	warns >> warningCount;
+	warns.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	for (int i = 0; i < warningCount; i++) {
 		MyString input;
-		warns >> input.data;
+		warns >> input;
 		MyString* arr = stringToArray(input, ':');
 		int id = 0;
 		tryConvertToInt(arr[0].data, id);
@@ -344,8 +387,7 @@ Instance::Instance()
 		tryConvertToInt(arr[2].data, receiverid);
 		int severity = 0;
 		tryConvertToInt(arr[4].data, severity);
-		Warning w(id, senderid, receiverid, arr[3], severity);
-		warnings[i] = &w;
+		warnings[i] = new Warning(id, senderid, receiverid, arr[3], severity);
 		delete[] arr;
 	}
 	warns.close();
@@ -436,8 +478,14 @@ Instance::~Instance()
 	prod << latestProductId << endl;
 	prod << productCount << endl;
 	for (int i = 0; i < productCount; i++) {
+
 		MyString data = products[i]->getType();
-		products[i]->getName();
+		data.append(":");
+		MyString pId;
+		convertToString(employees[i]->getId(), pId);
+		data.append(pId);
+		data.append(":");
+		data.append(products[i]->getName());
 		data.append(":");
 		MyString catId;
 		convertToString(products[i]->getCatId(), catId);
@@ -588,12 +636,15 @@ Instance::~Instance()
 
 void Instance::leaveWork() const
 {
+	int id = currentUser->getId();
 	delete[] currentUser;
 	role = None;
+	cout << "User with id " << id << " has ended their career at the FMI Supermarket!" << endl;
 }
 
 void Instance::listPending() const
 {
+	int count = 0;
 	for (int i = 0; i < employeeCount; i++) {
 		if (employees[i]->getType().compare("Cashier")) {
 			if (!employees[i]->isApproved()) {
@@ -605,14 +656,43 @@ void Instance::listPending() const
 				cout << "Transactions: " << currentUser->getTransactions() << endl;
 				cout << "Warning Points: " << currentUser->getWarningPoints() << endl;
 			}
+			count++;
 		}
 		cout << endl;
+	}
+	if (count == 0) {
+		cout << "No pending cashiers found!" << endl;
 	}
 }
 
 void Instance::listTransactions() const
 {
-
+	int count = 0;
+	for (int i = 0; i < employeeCount; i++) {
+		count += employees[i]->getTransactions();
+	}
+	for (int i = 0; i < count; i++) {
+		MyString dir = TRANSACTIONS_PREFIX_DIR;
+		dir.append("receipt_");
+		MyString tId;
+		convertToString(i, tId);
+		dir.append(tId);
+		dir.append(".txt");
+		ifstream t(dir.data);
+		if (!t.is_open()) {
+			cout << "couldn't load receipt No: " << tId.data;
+			continue;
+		}
+		MyString input;
+		while (!t.eof()) {
+			t >> input.data;
+			cout << input.data << endl;
+		}
+		cout << endl;
+	}
+	if (count == 0) {
+		cout << "No transactions found!" << endl;
+	}
 }
 
 bool Instance::login(MyString id, MyString password) {
@@ -620,7 +700,7 @@ bool Instance::login(MyString id, MyString password) {
 	tryConvertToInt(id.data, idI);
 	for (int i = 0; i < employeeCount; i++) {
 		if (employees[i]->getId() == idI) {
-			if (employees[i]->getPassword().compare(password)) {
+			if (password.compare(employees[i]->getPassword())) {
 				cout << "User " << employees[i]->getFirstName().data << " " << employees[i]->getLastName().data << " with ID: " << employees[i]->getId() << " has been logged into the system." << endl;
 				currentUser = employees[i];
 				if (currentUser->getType().compare("Manager")) {
@@ -690,7 +770,7 @@ bool Instance::registerManager(char* first_name, char* last_name, char* telephon
 	managersCount++;
 	MyString key = createSpecialKey();
 	cout << "Special code: " << key.data << endl;
-	MyString dir = "data/Special Codes/";
+	MyString dir = SPECIALKEY_PREFIX_DIR;
 	MyString mId;
 	convertToString(m.getId(), mId);
 	dir.append(mId);
@@ -702,6 +782,7 @@ bool Instance::registerManager(char* first_name, char* last_name, char* telephon
 	spCodeDir << key.data;
 	spCodeDir.close();
 	cout << "Successfully registered a manager!" << endl;
+
 	return true;
 }
 
@@ -740,6 +821,7 @@ void Instance::listWorkers() const{
 }
 
 void Instance::listProducts() const{
+	int pCount = 0;
 	for (int i = 0; i < productCount; i++) {
 		cout << "Product Name: " << products[i]->getName().data << endl;
 		//Search for category
@@ -764,6 +846,10 @@ void Instance::listProducts() const{
 			cout << "Kilograms left: " << products[i]->getWeight() << endl;
 		}
 		cout << endl;
+		pCount++;
+	}
+	if (pCount == 0) {
+		cout << "No products found!" << endl;
 	}
 }
 
@@ -800,5 +886,145 @@ void Instance::listProductsCategory(MyString cat) const{
 	if (count == 0) {
 		cout << "No products of category " << cat.data << endl;
 	}
+}
+
+void Instance::cashierApprove(int cId) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (cId == employees[i]->getId()) {
+			if (employees[i]->getType().compare("Cashier")) {
+				if (!employees[i]->isApproved()) {
+					employees[i]->approve();
+					cout << "Successfully approved employee with id " << cId << endl;
+					break;
+				}
+				else {
+					cout << "Employee is already approved!" << endl;
+				}
+				break;
+			}
+			else {
+				cout << "Employee is manager!" << endl;
+				break;
+			}
+		}
+	}
+	cout << "No employee with id " << cId << " found!" << endl;
+}
+
+void Instance::cashierDecline(int cId) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (employees[i]->getId() == cId) {
+			if (employees[i]->getType().compare("Cashier")) {
+				if (!employees[i]->isApproved()) {
+					delete employees[i];
+					cout << "Successfully declined employee with id " << cId << endl;
+					break;
+				}
+				else {
+					cout << "Employee is approved. You can't decline them!" << endl;
+				}
+				break;
+			}
+			else {
+				cout << "Employee is manager!" << endl;
+				break;
+			}
+		}
+	}
+	cout << "No employee with id " << cId << " found!" << endl;
+}
+
+void Instance::listWarnedCashiers(int points) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (employees[i]->getType().compare("Cashier")) {
+			if (employees[i]->getWarningPoints() >= points) {
+				cout << employees[i]->getFirstName().data << " " << employees[i]->getLastName().data << " " << employees[i]->getTelephone().data << " Warning points: " << employees[i]->getWarningPoints() << endl;
+			}
+		}
+	}
+}
+
+void Instance::warnCashier(int cId, int severity) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (employees[i]->getId() == cId) {
+			if (employees[i]->getType().compare("Cashier")) {
+				employees[i]->warn(severity);
+				cout << "Successfully warned employee with id " << cId << " with severity " << severity << endl;
+				break;
+			}
+			else {
+				cout << "Employee is manager!" << endl;
+				break;
+			}
+		}
+	}
+	cout << "No employee with id " << cId << " found!" << endl;
+}
+
+void Instance::promoteCashier(int cId) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (employees[i]->getId() == cId) {
+			if (employees[i]->getType().compare("Cashier")) {
+				Manager m(employees[i]->getId(), employees[i]->getFirstName().data, employees[i]->getLastName().data, employees[i]->getTelephone().data, employees[i]->getAge(), employees[i]->getPassword().data);
+				delete employees[i];
+				employees[i] = &m;
+				cout << "Successfully promoted employee with id " << cId << endl;
+				break;
+			}
+		}
+		else {
+			cout << "Employee is already a manager!" << endl;
+			break;
+		}
+	}
+	cout << "No employee with id " << cId << " found!" << endl;
+}
+
+void Instance::fireCashier(int cId) const
+{
+	for (int i = 0; i < employeeCount; i++) {
+		if (employees[i]->getId() == cId) {
+			if (employees[i]->getType().compare("Cashier")) {
+				delete employees[i];
+				cout << "Successfully fired employee with id " << cId << endl;
+				break;
+			}
+		}
+		else {
+			cout << "Employee is manager!" << endl;
+			break;
+		}
+	}
+	cout << "No employee with id " << cId << " found!" << endl;
+}
+
+void Instance::addCategory()
+{
+}
+
+void Instance::addProduct()
+{
+}
+
+void Instance::deleteProduct(int pId)
+{
+	for (int i = 0; i < productCount; i++) {
+		if (products[i]->getId() == pId) {
+			delete products[i];
+		}
+	}
+}
+
+void Instance::loadProducts(MyString fileName)
+{
+}
+
+void Instance::loadGiftCards(MyString fileName)
+{
 }
 
