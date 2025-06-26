@@ -61,7 +61,7 @@ MyString::MyString(const MyString& other)
 }
 
 MyString::~MyString()
-{
+ {
     free();
 }
 

@@ -51,10 +51,6 @@ Cashier& Cashier::operator= (Cashier& const other) {
 	return *this;
 }
 
-void Cashier::sell() const
-{
-
-}
 void Cashier::approve()
 {
 	approved = 1;

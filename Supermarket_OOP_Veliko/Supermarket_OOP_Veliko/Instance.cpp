@@ -87,7 +87,7 @@ void Instance::run()
 										else {
 											if (role == Cash) {
 												if (words[0].compare("sell")) {
-
+													sell();
 												}
 												else {
 													cout << "Unknown command!" << endl;
@@ -143,12 +143,24 @@ void Instance::run()
 																				fireCashier(cId);
 																			}
 																			else {
-																				if (words[0].compare("add-category")) {
-																					addCategory();
+																				if (words[0].compare("delete-category")) {
+																					int cId = 0;
+																					tryConvertToInt(words[1].data, cId);
+																					deleteCategory(cId);
 																				}
 																				else {
 																					if (words[0].compare("add-product")) {
-																						addProduct();
+																						if (words[1].compare("Unit")) {
+																							addProduct(words[1]);
+																						}
+																						else {
+																							if (words[1].compare("Weight")) {
+																								addProduct(words[1]);
+																							}
+																							else {
+																								cout << "Unsupported type" << endl;
+																							}
+																						}
 																					}
 																					else {
 																						if (words[0].compare("delete-product")) {
@@ -634,6 +646,92 @@ Instance::~Instance()
 	delete[] warnings;
 }
 
+void Instance::sell() const{
+	int id = 0;
+	//implement an id automiser
+	MyString dir = TRANSACTIONS_PREFIX_DIR;
+	dir.append("receipt_");
+	MyString tId;
+	convertToString(id, tId);
+	dir.append(tId);
+	dir.append(".txt");
+	ofstream k(dir.data);
+	if (!k.is_open()) {
+		cout << "Failed to write receipt with id " << id << endl;
+	}
+	MyString in = "";
+	double total = 0;
+	int* prod = new int[1000];
+	double* price = new double[1000];
+	int c = 0;
+	while (!in.compare("END")) {
+		cout << "Products:" << endl;
+		for (int i = 0; i < productCount; i++) {
+			if (products[i]->getType().compare("Unit"))
+				cout << "\t" << i << products[i]->getName().data << " : " << products[i]->getPrice() << " : " << products[i]->getCount();
+			else
+				cout << "\t" << i << products[i]->getName().data << " : " << products[i]->getPrice() << " : " << products[i]->getWeight();
+		}
+		cout << endl << endl << "Transaction ID: " << id << endl;
+		cout << "Total: " << total << endl << endl;
+		cout << "Enter product id to sell. Enter END to end the transaction:" << endl;
+		int l = 0;
+		cin >> l;
+		cout << "Enter quantity:" << endl;
+		double n = 0;
+		cin >> n;
+		cout << endl << "-----------------" << endl << endl;
+		k << products[l]->getName().data << " " << products[l]->getPrice() << " : " << products[l]->getPrice() * n << endl;
+		total += products[l]->getPrice();
+		prod[c] = products[l]->getCatId();
+		price[c] = products[l]->getPrice();
+		c++;
+	}
+	cout << "Add voucher: (Y/N)? ";
+	char yn;
+	cin >> yn;
+
+	if (yn == 'Y') {
+		MyString code;
+		cout << "Enter voucher: ";
+		cin >> code;
+
+		double disc;
+
+		for (int i = 0; i < voucherCount; i++) {
+			if (vouchers[i]->getCode().compare(code)) {
+				if (vouchers[i]->getType().compare("All")) {
+					disc = disc + total * vouchers[i]->getPercentage() / 100;
+					cout << vouchers[i]->getPercentage() << "% applied! Transaction completed!" << endl;
+				}
+				else {
+					if (vouchers[i]->getType().compare("Single")) {
+						for (int m = 0; m < c; m++) {
+							if (prod[m] == vouchers[i]->getCategory()) {
+								disc = disc + price[m] * vouchers[i]->getPercentage() / 100;
+							}
+						}
+					}
+					else {
+						for (int m = 0; m < vouchers[m]->getCategoriesCount(); m++) {
+							for (int n = 0; n < c; n++) {
+								if (prod[n] == vouchers[i]->getCategories()[m]) {
+									disc = disc + price[n] * vouchers[i]->getPercentage() / 100;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		total -= disc;
+
+		cout << "Receipt saves as: " << dir << endl;
+		cout << "Total: " << total << endl;
+	}
+}
+
 void Instance::leaveWork() const
 {
 	int id = currentUser->getId();
@@ -896,16 +994,15 @@ void Instance::cashierApprove(int cId) const
 				if (!employees[i]->isApproved()) {
 					employees[i]->approve();
 					cout << "Successfully approved employee with id " << cId << endl;
-					break;
 				}
 				else {
 					cout << "Employee is already approved!" << endl;
 				}
-				break;
+				return;
 			}
 			else {
 				cout << "Employee is manager!" << endl;
-				break;
+				return;
 			}
 		}
 	}
@@ -920,16 +1017,15 @@ void Instance::cashierDecline(int cId) const
 				if (!employees[i]->isApproved()) {
 					delete employees[i];
 					cout << "Successfully declined employee with id " << cId << endl;
-					break;
 				}
 				else {
 					cout << "Employee is approved. You can't decline them!" << endl;
 				}
-				break;
+				return;
 			}
 			else {
 				cout << "Employee is manager!" << endl;
-				break;
+				return;
 			}
 		}
 	}
@@ -954,11 +1050,11 @@ void Instance::warnCashier(int cId, int severity) const
 			if (employees[i]->getType().compare("Cashier")) {
 				employees[i]->warn(severity);
 				cout << "Successfully warned employee with id " << cId << " with severity " << severity << endl;
-				break;
+				return;
 			}
 			else {
 				cout << "Employee is manager!" << endl;
-				break;
+				return;
 			}
 		}
 	}
@@ -974,12 +1070,12 @@ void Instance::promoteCashier(int cId) const
 				delete employees[i];
 				employees[i] = &m;
 				cout << "Successfully promoted employee with id " << cId << endl;
-				break;
+				return;
 			}
 		}
 		else {
 			cout << "Employee is already a manager!" << endl;
-			break;
+			return;
 		}
 	}
 	cout << "No employee with id " << cId << " found!" << endl;
@@ -991,24 +1087,80 @@ void Instance::fireCashier(int cId) const
 		if (employees[i]->getId() == cId) {
 			if (employees[i]->getType().compare("Cashier")) {
 				delete employees[i];
+				employees[i] = nullptr;
 				cout << "Successfully fired employee with id " << cId << endl;
-				break;
+				return;
 			}
 		}
 		else {
 			cout << "Employee is manager!" << endl;
-			break;
+			return;
 		}
 	}
 	cout << "No employee with id " << cId << " found!" << endl;
 }
 
-void Instance::addCategory()
+void Instance::deleteCategory(int cId)
 {
+	for (int i = 0; i < categoryCount; i++) {
+		if (categories[i]->getId() == cId) {
+			delete categories[i];
+			categories[i] = nullptr;
+			cout << "Successfully deleted category!" << endl;
+			return;
+		}
+	}
+	cout << "No category with id " << cId << " found!" << endl;
 }
 
-void Instance::addProduct()
+void Instance::addProduct(MyString type)
 {
+	cout << "Name:" << endl;
+	MyString name;
+	cin >> name;
+
+	cout << "Category name:" << endl;
+	MyString cat;
+	cin >> cat;
+	int catId = -1;
+	for (int i = 0; i < categoryCount; i++) {
+		if (categories[i]->getName().compare(cat)) {
+			catId = categories[i]->getId();
+		}
+	}
+	if (catId == -1) {
+		cout << "No category found by this name, try again !" << endl;
+		return;
+	}
+
+	cout << "Price:" << endl;
+	double price = 0;
+	cin >> price;
+	if (type.compare("Unit")) {
+		cout << "Count:" << endl;
+		int count = 0;
+		cin >> count;
+		ProductByUnit pb(latestProductId++, name.data, catId, price, count);
+		for (int i = 0; i < productCount; i++) {
+			if (products[i] == nullptr) {
+				products[i] = &pb;
+				break;
+			}
+		}
+	}
+	else {
+		cout << "Weight:" << endl;
+		double count = 0;
+		cin >> count;
+		ProductByWeight pb(latestProductId++, name.data, catId, price, count);
+		for (int i = 0; i < productCount; i++) {
+			if (products[i] == nullptr) {
+				products[i] = &pb;
+				break;
+			}
+		}
+	}
+
 }
 
 void Instance::deleteProduct(int pId)

@@ -1,1 +1,124 @@
-﻿  Supermarket_OOP_Veliko.vcxproj -> C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\x64\Debug\Supermarket_OOP_Veliko.exe
+﻿  Employee.cpp
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Constants.h(6,18): warning C4114: same type qualifier used more than once
+  (compiling source file 'Employee.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(15,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Employee.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(19,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Employee.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(22,30): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Employee.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(6,33): warning C4227: anachronism used: qualifiers on reference are ignored
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(78,28): warning C4227: anachronism used: qualifiers on reference are ignored
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(141,40): warning C4227: anachronism used: qualifiers on reference are ignored
+  Instance.cpp
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Constants.h(6,18): warning C4114: same type qualifier used more than once
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(15,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(19,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(22,30): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(12,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(16,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(16,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(13,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(20,32): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Voucher.h(10,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Product.h(18,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Warning.h(15,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\MultipleCategoryVoucher.h(13,39): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\MultipleCategoryVoucher.h(16,49): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\SingleCategoryVoucher.h(13,48): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\AllProductsVoucher.h(12,39): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Instance.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Instance.cpp(206,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Instance.cpp(229,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Instance.cpp(232,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Instance.cpp(234,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Supermarket_OOP_Veliko.cpp
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Constants.h(6,18): warning C4114: same type qualifier used more than once
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(15,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(19,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.h(22,30): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(12,24): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Category.h(16,19): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Manager.h(16,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(13,26): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Cashier.h(20,32): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Voucher.h(10,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Product.h(18,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Warning.h(15,17): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\MultipleCategoryVoucher.h(13,39): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\MultipleCategoryVoucher.h(16,49): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\SingleCategoryVoucher.h(13,48): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\AllProductsVoucher.h(12,39): warning C4227: anachronism used: qualifiers on reference are ignored
+  (compiling source file 'Supermarket_OOP_Veliko.cpp')
+  
+  Generating Code...
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(161,1): warning C4172: returning address of local variable or temporary: a
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(156,1): warning C4172: returning address of local variable or temporary: a
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(175,1): warning C4172: returning address of local variable or temporary: a
+C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\Supermarket_OOP_Veliko\Employee.cpp(166,1): warning C4172: returning address of local variable or temporary: a
+  Supermarket_OOP_Veliko.vcxproj -> C:\Users\44740\Desktop\supermarket\Supermarket_OOP_Veliko\x64\Debug\Supermarket_OOP_Veliko.exe

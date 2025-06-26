@@ -18,7 +18,6 @@ public:
     Cashier(int _id, char* _firstName, char* _familyName, char* _telephoneNumber, int _age, char* _password, int _transactions, int _warningPoints, bool _approved);
     ~Cashier();
     Cashier& operator= (Cashier& const other);
-    void sell() const;
     void approve() override;
     void warn(int points) override;
 

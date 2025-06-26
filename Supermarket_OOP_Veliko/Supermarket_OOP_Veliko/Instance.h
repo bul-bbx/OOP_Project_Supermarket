@@ -27,6 +27,8 @@ class Instance
 
 
 public:
+	int latestTransactionsId;
+
 	int latestEmployeeId;
 	Employee** employees = new Employee * [MAX_USERS];
 	size_t employeeCount;
@@ -53,6 +55,7 @@ public:
 	Instance();
 	~Instance();
 
+	void sell() const;
 	void leaveWork() const;
 	void listPending() const;
 	void listTransactions() const;
@@ -71,8 +74,8 @@ public:
 	void warnCashier(int cId, int severity) const;
 	void promoteCashier(int cId) const;
 	void fireCashier(int cId) const;
-	void addCategory();
-	void addProduct();
+	void deleteCategory(int cId);
+	void addProduct(MyString type);
 	void deleteProduct(int cId);
 	void loadProducts(MyString fileName);
 	void loadGiftCards(MyString fileName);
